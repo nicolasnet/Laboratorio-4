@@ -8,12 +8,14 @@ import {FormsModule} from '@angular/forms';
 
 import {RouterModule} from '@angular/router';
 import { ErrorComponent } from './componentes/error/error.component';
+import { ImputejemploComponent } from './componentes/imputejemplo/imputejemplo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ErrorComponent
+    ErrorComponent,
+    ImputejemploComponent
   ],
   imports: [
     BrowserModule,
