@@ -10,11 +10,11 @@ import { Ususarios } from 'src/app/clases/ususarios';
 })
 export class LoginComponent implements OnInit {
 
-  public unsuario: Ususarios;
+  public unusuario: Ususarios;
 
 
   constructor(private router: Router) {
-      this.unsuario = new Ususarios('Nicolas', 123456);
+      this.unusuario = new Ususarios('Seba', 123456);
    }
 
   ngOnInit() {
