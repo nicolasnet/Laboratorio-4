@@ -14,7 +14,7 @@ export class AppComponent {
   ListadoProfesoresPrincipal:Profesor[];
 
   constructor() { 
-        this.profesorParaMostrar= new Profesor("newton","fisica",777);
+        this.profesorParaMostrar= new Profesor("Newton","Jonh","Fisica",777);
         this.listadoPrincipal = [
           { apellido: 'Aguas' ,nombre:"rogelio",legajo: 666 },
           { apellido: 'Mercurio' ,nombre:"Alfredo",legajo: 333 }
@@ -36,8 +36,13 @@ export class AppComponent {
   }
   mostrarProfesor(parametroProfesor:Profesor)
   {
-      console.info("profesor",parametroProfesor);
-      //this.profesorParaMostrar=parametroProfesor;
-      this.ListadoProfesoresPrincipal.push(parametroProfesor);
+    console.info("profesor",parametroProfesor);
+    //this.profesorParaMostrar=parametroProfesor;
+    this.ListadoProfesoresPrincipal.push(parametroProfesor);
   }
+  
+  borraProfesor(profesorElegido: Profesor){
+    this.ListadoProfesoresPrincipal.splice(profesorElegido.index,1);
+  }
+  
 }

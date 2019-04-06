@@ -15,4 +15,9 @@ export class TablaProfesorComponent implements OnInit {
   ngOnInit() {
   }
 
+  mostrarDetalles(parametroProfesor)
+  {
+    this.profesorSeleccionado.emit(parametroProfesor);
+  }
+
 }

@@ -4,15 +4,15 @@
 
 
 <div *ngIf="unProfesor">
-  <h2>{{unProfesor.apellido}} </h2>
+  <h2>{{unProfesor.apellido}}, {{unProfesor.nombre}} </h2>
  
 
   <div class="card" style="width:200px">
       <img class="card-img-top" src="/assets/imagenes/presentacion.jpg" alt="Card image" style="width:100%">
       <div class="card-body">
         <h4 class="card-title">{{unProfesor.legajo}}</h4>
-        <p class="card-text">El Profesor {{unProfesor.nombre}} ,{{unProfesor.apellido}}</p>
-        <a href="#" class="btn btn-danger">Borrar</a>
+        <p class="card-text">Profesor/a de {{unProfesor.materia}}</p>
+        <button class="btn btn-danger" (click)="borraProfesor(unProfesor)">Borrar</button>
       </div>
     </div>
 </div>

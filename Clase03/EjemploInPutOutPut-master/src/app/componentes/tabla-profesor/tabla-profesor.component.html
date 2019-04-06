@@ -1,6 +1,14 @@
 <table class="table">
+  <thead>
+    <th>Legajo</th>
+    <th>Materia</th>
+    <th>Apellido</th>
+    <th>Nombre</th>
+    <th>Detalles</th>
+  </thead>
+
   <tbody>
-    <tr *ngFor="let profesor of listadoProfesores" app-fila-profesor [unProfesor]="profesor" >
+    <tr *ngFor="let profesor of listadoProfesores; let indice=index" app-fila-profesor [unProfesor]="profesor"[index]="indice" (profesorSeleccionado)="mostrarDetalles($event)">
     </tr>
   </tbody>
 </table>
