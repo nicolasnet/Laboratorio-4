@@ -1,16 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
-import { HeladosComponent } from './componetes/helados/helados.component';
+
+import { ProductosComponent } from './componentes/productos/productos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeladosComponent
+
+    ProductosComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
